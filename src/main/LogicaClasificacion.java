@@ -16,7 +16,19 @@ public class LogicaClasificacion {
      */
     public Queue<String> invertirColaNombres(Queue<String> cola) {
 
-        return new LinkedList<>(Arrays.asList()); // Simulación de resultado
+        Stack<String> pila = new Stack<>();
+
+        while(!cola.isEmpty()){
+            pila.push(cola.poll());
+        }
+
+        Queue<String> colaInvertido = new LinkedList<>();
+
+        while(!pila.isEmpty()){
+            colaInvertido.offer(pila.pop());
+        }
+
+        return colaInvertido;
     }
 
     /**
@@ -33,7 +45,7 @@ public class LogicaClasificacion {
      */
     public boolean verificarPalindromoCola(Queue<String> cola) {
 
+
         return false;
     }
-
 }
