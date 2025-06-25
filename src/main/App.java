@@ -24,7 +24,10 @@ public class App {
         
 
         Queue<Character> colaPalabra = new LinkedList<>();
-    
-
+        String palabra = "radar";
+        for(Character letra: palabra.toCharArray()){
+            colaPalabra.add(letra);
+        }
+        ejercicio.verificarPalindromoCola(colaPalabra);
     }
 }

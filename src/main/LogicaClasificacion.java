@@ -25,7 +25,7 @@ public class LogicaClasificacion {
         Queue<String> colaInvertido = new LinkedList<>();
 
         while(!pila.isEmpty()){
-            colaInvertido.offer(pila.pop());
+            colaInvertido.add(pila.pop());
         }
 
         return colaInvertido;
@@ -43,8 +43,9 @@ public class LogicaClasificacion {
      * @param cola Cola de letras en minúsculas
      * @return true si forman un palíndromo, false si no
      */
-    public boolean verificarPalindromoCola(Queue<String> cola) {
+    public boolean verificarPalindromoCola(Queue<Character> cola) {
 
+        
 
         return false;
     }
